@@ -52,7 +52,7 @@ To install and set up the HMS system, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/hospital-management-system.git
+    git clone https://github.com/falexutb/hospital-management-system.git
     cd hospital-management-system
     ```
 
@@ -101,6 +101,9 @@ To install and set up the HMS system, follow these steps:
 - **MSSQL Integration**: Transition from file-based storage to MSSQL.
 - **Payment Gateway Integration**: Add support for payment processing.
 - **Scalability Enhancements**: Design the system for easy scalability.
+
+## Planned Additions
+In the folder "Planned Additions," there are placeholder files for the planned enhancements to the application. These include future integration points for MSSQL access modules, payment gateway, and more.
 
 ## Contributing
 We welcome contributions to improve the Hospital Management System. Please follow these steps:
