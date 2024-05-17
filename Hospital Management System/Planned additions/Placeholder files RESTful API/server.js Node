@@ -1,0 +1,35 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.json());
+
+// Placeholder routes for RESTful APIs
+app.get('/api/patients', (req, res) => {
+    res.json([{ id: 1, name: 'John Doe' }]);
+});
+
+app.post('/api/patients', (req, res) => {
+    res.status(201).json(req.body);
+});
+
+app.get('/api/appointments', (req, res) => {
+    res.json([{ id: 1, patientId: 1, date: '2024-05-20', time: '10:00' }]);
+});
+
+app.post('/api/appointments', (req, res) => {
+    res.status(201).json(req.body);
+});
+
+app.get('/api/billing', (req, res) => {
+    res.json([{ id: 1, patientId: 1, amount: 200.00 }]);
+});
+
+app.post('/api/billing', (req, res) => {
+    res.status(201).json(req.body);
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+});
